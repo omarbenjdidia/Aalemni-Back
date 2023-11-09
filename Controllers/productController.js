@@ -5,7 +5,7 @@ export async function Getproduct(req, res) {
   try {
     // Fetch all products from the database
     const products = await productModel.find();
-
+//
     return res.status(200).send({
       products,
     });
